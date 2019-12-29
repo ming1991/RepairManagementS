@@ -9,3 +9,14 @@ C:\Users\Administrator\Desktop\返修管理系统\返修管理系统\obj\Debug\R
 C:\Users\Administrator\Desktop\返修管理系统\返修管理系统\obj\Debug\RepairManagementS.ReserveW.resources
 C:\Users\Administrator\Desktop\返修管理系统\返修管理系统\obj\Debug\RepairManagementS.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\返修管理系统\返修管理系统\obj\Debug\RepairManagementS.modify.resources
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\bin\Debug\RepairManagementS.exe
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\bin\Debug\RepairManagementS.pdb
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\obj\Debug\返修管理系统.add.resources
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\obj\Debug\返修管理系统.Main.resources
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.modify.resources
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.ReserveW.resources
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.exe
+C:\Users\Administrator\Documents\GitHub\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.pdb

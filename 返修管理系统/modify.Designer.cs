@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.A_Remarks = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.A_ExternalRepair = new System.Windows.Forms.ComboBox();
             this.A_DeliveryTime = new System.Windows.Forms.DateTimePicker();

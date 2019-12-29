@@ -30,7 +30,23 @@ namespace RepairManagementS
                 WhatTable = "dbo.RRForm";//返修表
                 tem = "R_id";
                 ds = ope.RegionTableSQL(tem, M_str, WhatTable);
-                label17.Text = ds.Tables[0].Rows[0]["R_RepairCompany"].ToString();
+                label17.Text = ds.Tables[0].Rows[0]["R_region"].ToString();
+                TextBox1.Text= ds.Tables[0].Rows[0]["R_region"].ToString();
+                TextBox2.Text = ds.Tables[0].Rows[0]["R_RepairCompany"].ToString();
+                TextBox3.Text = ds.Tables[0].Rows[0]["R_RepairMethod"].ToString();
+                TextBox4.Text = ds.Tables[0].Rows[0]["R_RepairNumber"].ToString();
+                TextBox7.Text = ds.Tables[0].Rows[0]["R_Consignee"].ToString();
+                TextBox8.Text = ds.Tables[0].Rows[0]["R_MachineType"].ToString();
+                TextBox9.Text = ds.Tables[0].Rows[0]["R_Repairman"].ToString();
+                TextBox10.Text = ds.Tables[0].Rows[0]["R_MachineModel"].ToString();
+                TextBox11.Text = ds.Tables[0].Rows[0]["R_SerialNumber"].ToString();
+                TextBox12.Text = ds.Tables[0].Rows[0]["R_FaultStatus"].ToString();
+                TextBox13.Text = ds.Tables[0].Rows[0]["R_CauseOfFailure"].ToString();
+                TextBox14.Text = ds.Tables[0].Rows[0]["R_ExternalRepair"].ToString();
+                TextBox15.Text = ds.Tables[0].Rows[0]["R_MaintenanceMethod"].ToString();
+                TextBox16.Text = ds.Tables[0].Rows[0]["R_Remarks"].ToString();
+                A_NotificationOTOD.Value= (DateTime)ds.Tables[0].Rows[0]["R_NotificationOTOD"];
+                A_DeliveryTime.Value = (DateTime)ds.Tables[0].Rows[0]["R_DeliveryTime"];
             }
             if (SearchListLabel == 2)
             {
