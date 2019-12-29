@@ -57,6 +57,11 @@ namespace 返修管理系统
                 MessageBox.Show("报修公司不能空白");
                 return;
                 }
+            if (A_RepairMethod.Text == "自带")
+            {
+                MessageBox.Show("报修方式不能空白");
+                return;
+            }
             if (A_RepairMethod.Text=="自带")
             {
                 A_RepairNumber.Text = "自带";
@@ -66,7 +71,7 @@ namespace 返修管理系统
                 MessageBox.Show("返修单号不能空白");
                 return;
             }
-               
+            
             string reg= A_region.Text;//区域
             string RepairC = A_RepairCompany.Text;//报修公司
             string RepairM = A_RepairMethod.Text;//报修方式
@@ -83,7 +88,7 @@ namespace 返修管理系统
             string ExternalR = A_ExternalRepair.Text;//是否外修
             string MaintenanceM = A_MaintenanceMethod.Text;//维修方法
             string Remarks = A_Remarks.Text;//备注
-            label17.Text = reg + RepairC + RepairM + RepairN + NotificationO + DeliveryT+ Con+ MachineT+ Repairman+ Repairman+ MachineM + SerialN + ExternalR;
+            
             ope.add(reg, RepairC, RepairM,RepairN, NotificationO, DeliveryT,Con, MachineT,Repairman,MachineM,SerialN,FaultS,CauseOfF,ExternalR, MaintenanceM,Remarks);
         }
     }
