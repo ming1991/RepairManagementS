@@ -22,19 +22,62 @@ namespace RepairManagementS
 
         private void modify_Load(object sender, EventArgs e)
         {
+
+
             string tem=null;
             string WhatTable = null;//啥表
             DataSet ds;
-            if (SearchListLabel == 1)
+            
+            WhatTable = "dbo.RRForm";//返修表
+            tem = "R_id";
+            ds = ope.RegionTableSQL(tem, M_str, WhatTable);
+                //label17.Text = ds.Tables[0].Rows[0]["R_region"].ToString();
+            label1.Text = "区域";
+            label2.Text = "报修公司";
+            label3.Text = "报修方式";
+            label4.Text = "返修单号";
+            label5.Text = "通知提货时间";
+            label6.Text = "提货时间";
+            label7.Text = "提货人";
+            label8.Text = "类型";
+            label9.Text = "维修人";
+            label10.Text = "机器型号";
+            label11.Text = "序列号";
+            label12.Text = "故障现状";
+            label13.Text = "故障原因";
+            label14.Text = "是否外修";
+            label15.Text = "维修方法";
+            label16.Text = "寄回日期";
+            label17.Text = "寄回单号";
+            label18.Text = "发货人";
+            label19.Text = "备注";
+
+            try
             {
-                WhatTable = "dbo.RRForm";//返修表
-                tem = "R_id";
-                ds = ope.RegionTableSQL(tem, M_str, WhatTable);
-                label17.Text = ds.Tables[0].Rows[0]["R_region"].ToString();
                 TextBox1.Text= ds.Tables[0].Rows[0]["R_region"].ToString();
                 TextBox2.Text = ds.Tables[0].Rows[0]["R_RepairCompany"].ToString();
                 TextBox3.Text = ds.Tables[0].Rows[0]["R_RepairMethod"].ToString();
                 TextBox4.Text = ds.Tables[0].Rows[0]["R_RepairNumber"].ToString();
+
+                try
+                {
+                    A_NotificationOTOD.Value = (DateTime)ds.Tables[0].Rows[0]["R_NotificationOTOD"];
+                }
+                catch (Exception)
+                {
+
+                }
+                try
+                {
+                    A_DeliveryTime.Value = (DateTime)ds.Tables[0].Rows[0]["R_DeliveryTime"];
+                }
+                catch (Exception)
+                {
+
+                }
+
+
+                
                 TextBox7.Text = ds.Tables[0].Rows[0]["R_Consignee"].ToString();
                 TextBox8.Text = ds.Tables[0].Rows[0]["R_MachineType"].ToString();
                 TextBox9.Text = ds.Tables[0].Rows[0]["R_Repairman"].ToString();
@@ -44,27 +87,50 @@ namespace RepairManagementS
                 TextBox13.Text = ds.Tables[0].Rows[0]["R_CauseOfFailure"].ToString();
                 TextBox14.Text = ds.Tables[0].Rows[0]["R_ExternalRepair"].ToString();
                 TextBox15.Text = ds.Tables[0].Rows[0]["R_MaintenanceMethod"].ToString();
-                TextBox16.Text = ds.Tables[0].Rows[0]["R_Remarks"].ToString();
-                A_NotificationOTOD.Value= (DateTime)ds.Tables[0].Rows[0]["R_NotificationOTOD"];
-                A_DeliveryTime.Value = (DateTime)ds.Tables[0].Rows[0]["R_DeliveryTime"];
+
+                try
+                {
+                    r_dateOfReturn.Value = (DateTime)ds.Tables[0].Rows[0]["R_DateOfReturn"];
+                }
+                catch (Exception)
+                {
+
+                }
+                
+
+
+
+                TextBox17.Text = ds.Tables[0].Rows[0]["R_ReturnTheOddNumber"].ToString();
+                TextBox18.Text = ds.Tables[0].Rows[0]["R_Consignor"].ToString();
+                TextBox19.Text = ds.Tables[0].Rows[0]["R_Remarks"].ToString();
             }
-            if (SearchListLabel == 2)
+            catch (Exception)
             {
-                WhatTable = "dbo.BackupMachine";//备用机表
-                tem = "B_id";
-                ds = ope.RegionTableSQL(tem, M_str, WhatTable);
-                label17.Text = ds.Tables[0].Rows[0]["B_NameOfStandbyMachine"].ToString();
-            }
-            if (SearchListLabel == 3)
-            {
-                WhatTable = "dbo.SpareMachineIAOR";//备用机记录表
-                tem = "S_id";
-                ds = ope.RegionTableSQL(tem, M_str, WhatTable);
-                label17.Text = ds.Tables[0].Rows[0]["S_AccessoriesN"].ToString() + "   "+ WhatTable;
+
+                
             }
             
-            //ds = ope.RegionTableSQL(tem, M_str,WhatTable);
-            //label17.Text =  ds.Tables[0].Rows[0]["R_RepairCompany"].ToString();
+            
+            
+
+            
+            
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();//关闭窗口
+        }
+
+        /// <summary>
+        /// 按钮-更改
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

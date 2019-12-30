@@ -479,7 +479,11 @@ namespace 返修管理系统
 
         private void 更改ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            modify(sender,e);
+            if (SearchListLabel==1)
+            {
+                modify(sender, e);
+            }
+            
         }
     }
 }
