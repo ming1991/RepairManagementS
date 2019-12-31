@@ -94,6 +94,7 @@
             this.A_DeliveryTime.Name = "A_DeliveryTime";
             this.A_DeliveryTime.Size = new System.Drawing.Size(130, 21);
             this.A_DeliveryTime.TabIndex = 71;
+            this.A_DeliveryTime.Value = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             // 
             // A_NotificationOTOD
             // 
@@ -102,6 +103,7 @@
             this.A_NotificationOTOD.Name = "A_NotificationOTOD";
             this.A_NotificationOTOD.Size = new System.Drawing.Size(134, 21);
             this.A_NotificationOTOD.TabIndex = 70;
+            this.A_NotificationOTOD.Value = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             // 
             // TextBox15
             // 
@@ -430,6 +432,7 @@
             this.r_dateOfReturn.Name = "r_dateOfReturn";
             this.r_dateOfReturn.Size = new System.Drawing.Size(124, 21);
             this.r_dateOfReturn.TabIndex = 83;
+            this.r_dateOfReturn.Value = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             // 
             // modify
             // 

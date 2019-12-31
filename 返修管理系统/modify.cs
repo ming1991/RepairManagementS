@@ -14,6 +14,7 @@ namespace RepairManagementS
         RepairManagementS.BaseClass.Operation ope = new RepairManagementS.BaseClass.Operation();
         public string M_str = "";
         public int SearchListLabel = 0;
+        public string tem = null;
 
         public modify()
         {
@@ -24,7 +25,7 @@ namespace RepairManagementS
         {
 
 
-            string tem=null;
+            
             string WhatTable = null;//啥表
             DataSet ds;
             
@@ -94,7 +95,7 @@ namespace RepairManagementS
                 }
                 catch (Exception)
                 {
-
+                    
                 }
                 
 
@@ -110,12 +111,6 @@ namespace RepairManagementS
                 
             }
             
-            
-            
-
-            
-            
-            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -124,12 +119,32 @@ namespace RepairManagementS
         }
 
         /// <summary>
-        /// 按钮-更改
+        /// 按钮-更改修改返修表
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
+
+            string region = TextBox1.Text;
+            string RepairCompany = TextBox2.Text;
+            string RepairMethod = TextBox3.Text;
+            string RepairNumber = TextBox4.Text;
+            string Consignee = TextBox7.Text;
+            string MachineType = TextBox8.Text;
+            string Repairman = TextBox9.Text;
+            string MachineModel = TextBox10.Text;
+            string SerialNumber = TextBox11.Text;
+            string FaultStatus = TextBox12.Text;
+            string CauseOfFailure = TextBox13.Text;
+            string ExternalRepair = TextBox14.Text;
+            string MaintenanceMethod = TextBox15.Text;
+            string DateOfReturn = r_dateOfReturn.Value.ToString();
+            string ReturnTheOddNumber = TextBox17.Text;
+            string Consignor = TextBox18.Text;
+            string Remarks = TextBox19.Text;
+            ope.ModifyTheRepairFormSQL(M_str,  region,  RepairCompany,  RepairMethod,  RepairNumber,  Consignee,  MachineType,  Repairman,  MachineModel,  SerialNumber,  FaultStatus,  CauseOfFailure,  ExternalRepair,  MaintenanceMethod,  DateOfReturn,  ReturnTheOddNumber,Consignor,Remarks);
+            MessageBox.Show("更改成功");
 
         }
     }

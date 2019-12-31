@@ -146,5 +146,40 @@ namespace RepairManagementS.BaseClass
             }
             return null;
         }
+
+        /// <summary>
+        /// 修改返修表
+        /// </summary>
+        /// <param name="tem"></param>
+        /// <param name="region"></param>
+        /// <param name="RepairCompany"></param>
+        /// <param name="RepairMethod"></param>
+        /// <param name="RepairNumber"></param>
+        /// <param name="Consignee"></param>
+        /// <param name="MachineType"></param>
+        /// <param name="Repairman"></param>
+        /// <param name="MachineModel"></param>
+        /// <param name="SerialNumber"></param>
+        /// <param name="FaultStatus"></param>
+        /// <param name="CauseOfFailure"></param>
+        /// <param name="ExternalRepair"></param>
+        /// <param name="MaintenanceMethod"></param>
+        /// <param name="DateOfReturn"></param>
+        /// <param name="ReturnTheOddNumber"></param>
+        /// <param name="Consignor"></param>
+        /// <param name="Remarks"></param>
+        /// <returns></returns>
+        public int ModifyTheRepairFormSQL(string tem,string region, string RepairCompany, string RepairMethod, string RepairNumber, string Consignee, string MachineType, string Repairman, string MachineModel, string SerialNumber, string FaultStatus, string CauseOfFailure, string ExternalRepair, string MaintenanceMethod, string DateOfReturn, string ReturnTheOddNumber, string Consignor, string Remarks)//修改返修表
+        {
+
+            return (data.RunProc(" UPDATE dbo.RRForm SET R_region = '"+ region + "',R_RepairCompany = '" + RepairCompany + "',R_RepairMethod = '" + RepairMethod 
+                + "',R_RepairNumber = '" + RepairNumber + "',R_Consignee = '" + Consignee + "', R_MachineType = '" + MachineType 
+                + "',R_Repairman = '" + Repairman + "', R_MachineModel = '" + MachineModel + "', R_SerialNumber = '" + SerialNumber 
+                + "',R_FaultStatus = '" + FaultStatus + "', R_CauseOfFailure = '" + CauseOfFailure + "', R_ExternalRepair = '" + ExternalRepair 
+                + "',R_MaintenanceMethod = '" + MaintenanceMethod + "', R_DateOfReturn = '" + DateOfReturn + "',R_ReturnTheOddNumber = '" + ReturnTheOddNumber 
+                + "',R_Consignor = '" + Consignor + "', R_Remarks = '" + Remarks + "'WHERE R_id = "+ tem +""));
+        
+        }
+
     }
 }
