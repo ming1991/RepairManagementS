@@ -92,6 +92,7 @@
             // 
             // A_DeliveryTime
             // 
+            this.A_DeliveryTime.Enabled = false;
             this.A_DeliveryTime.Location = new System.Drawing.Point(465, 58);
             this.A_DeliveryTime.Name = "A_DeliveryTime";
             this.A_DeliveryTime.Size = new System.Drawing.Size(130, 21);
@@ -100,6 +101,7 @@
             // 
             // A_NotificationOTOD
             // 
+            this.A_NotificationOTOD.Enabled = false;
             this.A_NotificationOTOD.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.A_NotificationOTOD.Location = new System.Drawing.Point(149, 58);
             this.A_NotificationOTOD.Name = "A_NotificationOTOD";
@@ -162,7 +164,7 @@
             // 
             this.TextBox8.Location = new System.Drawing.Point(465, 82);
             this.TextBox8.Name = "TextBox8";
-            this.TextBox8.Size = new System.Drawing.Size(230, 21);
+            this.TextBox8.Size = new System.Drawing.Size(197, 21);
             this.TextBox8.TabIndex = 63;
             this.TextBox8.Text = "TextBox8";
             // 
@@ -178,7 +180,7 @@
             // 
             this.TextBox4.Location = new System.Drawing.Point(465, 34);
             this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new System.Drawing.Size(230, 21);
+            this.TextBox4.Size = new System.Drawing.Size(197, 21);
             this.TextBox4.TabIndex = 61;
             this.TextBox4.Text = "TextBox4";
             // 
@@ -194,7 +196,7 @@
             // 
             this.TextBox2.Location = new System.Drawing.Point(465, 9);
             this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(230, 21);
+            this.TextBox2.Size = new System.Drawing.Size(197, 21);
             this.TextBox2.TabIndex = 59;
             this.TextBox2.Text = "TextBox2";
             // 
@@ -359,7 +361,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(757, 118);
+            this.button2.Location = new System.Drawing.Point(695, 86);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 39);
             this.button2.TabIndex = 42;
@@ -370,7 +372,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(757, 37);
+            this.button1.Location = new System.Drawing.Point(695, 34);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 37);
             this.button1.TabIndex = 41;
@@ -458,7 +460,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 630);
+            this.ClientSize = new System.Drawing.Size(789, 584);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.TextBox19);
             this.Controls.Add(this.label19);

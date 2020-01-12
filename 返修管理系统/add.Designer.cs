@@ -242,7 +242,6 @@
             this.A_region.Name = "A_region";
             this.A_region.Size = new System.Drawing.Size(100, 21);
             this.A_region.TabIndex = 21;
-            this.A_region.Text = "区域";
             // 
             // A_RepairCompany
             // 
@@ -250,7 +249,6 @@
             this.A_RepairCompany.Name = "A_RepairCompany";
             this.A_RepairCompany.Size = new System.Drawing.Size(230, 21);
             this.A_RepairCompany.TabIndex = 22;
-            this.A_RepairCompany.Text = "报修公司";
             // 
             // A_RepairMethod
             // 
@@ -258,7 +256,6 @@
             this.A_RepairMethod.Name = "A_RepairMethod";
             this.A_RepairMethod.Size = new System.Drawing.Size(100, 21);
             this.A_RepairMethod.TabIndex = 23;
-            this.A_RepairMethod.Text = "报修方式";
             // 
             // A_RepairNumber
             // 
@@ -266,7 +263,6 @@
             this.A_RepairNumber.Name = "A_RepairNumber";
             this.A_RepairNumber.Size = new System.Drawing.Size(230, 21);
             this.A_RepairNumber.TabIndex = 24;
-            this.A_RepairNumber.Text = "123456789";
             // 
             // A_Consignee
             // 
@@ -274,7 +270,6 @@
             this.A_Consignee.Name = "A_Consignee";
             this.A_Consignee.Size = new System.Drawing.Size(99, 21);
             this.A_Consignee.TabIndex = 27;
-            this.A_Consignee.Text = "提货人";
             // 
             // A_MachineType
             // 
@@ -282,7 +277,6 @@
             this.A_MachineType.Name = "A_MachineType";
             this.A_MachineType.Size = new System.Drawing.Size(230, 21);
             this.A_MachineType.TabIndex = 28;
-            this.A_MachineType.Text = "类型";
             // 
             // A_Repairman
             // 
@@ -290,7 +284,6 @@
             this.A_Repairman.Name = "A_Repairman";
             this.A_Repairman.Size = new System.Drawing.Size(124, 21);
             this.A_Repairman.TabIndex = 29;
-            this.A_Repairman.Text = "维修人";
             // 
             // A_MachineModel
             // 
@@ -298,7 +291,6 @@
             this.A_MachineModel.Name = "A_MachineModel";
             this.A_MachineModel.Size = new System.Drawing.Size(197, 21);
             this.A_MachineModel.TabIndex = 30;
-            this.A_MachineModel.Text = "机器型号";
             // 
             // A_SerialNumber
             // 
@@ -306,7 +298,6 @@
             this.A_SerialNumber.Name = "A_SerialNumber";
             this.A_SerialNumber.Size = new System.Drawing.Size(230, 21);
             this.A_SerialNumber.TabIndex = 31;
-            this.A_SerialNumber.Text = "序列号";
             // 
             // A_FaultStatus
             // 
@@ -315,7 +306,6 @@
             this.A_FaultStatus.Name = "A_FaultStatus";
             this.A_FaultStatus.Size = new System.Drawing.Size(750, 60);
             this.A_FaultStatus.TabIndex = 33;
-            this.A_FaultStatus.Text = "故障现状";
             // 
             // A_CauseOfFailure
             // 
@@ -324,7 +314,6 @@
             this.A_CauseOfFailure.Name = "A_CauseOfFailure";
             this.A_CauseOfFailure.Size = new System.Drawing.Size(750, 60);
             this.A_CauseOfFailure.TabIndex = 34;
-            this.A_CauseOfFailure.Text = "故障原因";
             // 
             // A_MaintenanceMethod
             // 
@@ -333,7 +322,6 @@
             this.A_MaintenanceMethod.Name = "A_MaintenanceMethod";
             this.A_MaintenanceMethod.Size = new System.Drawing.Size(750, 60);
             this.A_MaintenanceMethod.TabIndex = 35;
-            this.A_MaintenanceMethod.Text = "维修方法";
             // 
             // A_NotificationOTOD
             // 
@@ -377,7 +365,6 @@
             this.A_Remarks.Name = "A_Remarks";
             this.A_Remarks.Size = new System.Drawing.Size(750, 60);
             this.A_Remarks.TabIndex = 40;
-            this.A_Remarks.Text = "备注";
             // 
             // add
             // 

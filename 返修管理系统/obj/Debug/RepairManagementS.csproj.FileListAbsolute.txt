@@ -31,3 +31,13 @@ D:\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.ReserveW.res
 D:\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.csproj.GenerateResource.cache
 D:\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.exe
 D:\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.pdb
+D:\c#\ming1991\RepairManagementS\返修管理系统\bin\Debug\RepairManagementS.exe
+D:\c#\ming1991\RepairManagementS\返修管理系统\bin\Debug\RepairManagementS.pdb
+D:\c#\ming1991\RepairManagementS\返修管理系统\obj\Debug\返修管理系统.add.resources
+D:\c#\ming1991\RepairManagementS\返修管理系统\obj\Debug\返修管理系统.Main.resources
+D:\c#\ming1991\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.modify.resources
+D:\c#\ming1991\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.Properties.Resources.resources
+D:\c#\ming1991\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.ReserveW.resources
+D:\c#\ming1991\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.csproj.GenerateResource.cache
+D:\c#\ming1991\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.exe
+D:\c#\ming1991\RepairManagementS\返修管理系统\obj\Debug\RepairManagementS.pdb

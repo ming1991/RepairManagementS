@@ -139,13 +139,14 @@ namespace RepairManagementS
             string CauseOfFailure = TextBox13.Text;
             string ExternalRepair = TextBox14.Text;
             string MaintenanceMethod = TextBox15.Text;
-            string DateOfReturn = r_dateOfReturn.Value.ToString();
+            string DateOfReturn = r_dateOfReturn.Value.ToString("d");
             string ReturnTheOddNumber = TextBox17.Text;
             string Consignor = TextBox18.Text;
             string Remarks = TextBox19.Text;
+           
             ope.ModifyTheRepairFormSQL(M_str,  region,  RepairCompany,  RepairMethod,  RepairNumber,  Consignee,  MachineType,  Repairman,  MachineModel,  SerialNumber,  FaultStatus,  CauseOfFailure,  ExternalRepair,  MaintenanceMethod,  DateOfReturn,  ReturnTheOddNumber,Consignor,Remarks);
             MessageBox.Show("更改成功");
-
+            
         }
     }
 }

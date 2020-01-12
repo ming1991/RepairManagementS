@@ -129,22 +129,43 @@ namespace RepairManagementS.BaseClass
         /// 查备用机是否在
         /// </summary>
         /// <returns></returns>
-        public string CheckWTSMII(string tem )
+        public string CheckWTSMII(string tem ,out string NameOfStandbyMachine)
         {
+            string InLibraryOrNot = "";
+            NameOfStandbyMachine = "";
+
+
             DataSet ds = (data.RunProcReturn("select B_InLibraryOrNot FROM dbo.BackupMachine WHERE B_Number='"+ tem + "'", "dbo.BackupMachine"));
-            
+            DataSet ds1 = (data.RunProcReturn("select B_NameOfStandbyMachine FROM dbo.BackupMachine WHERE B_Number='" + tem + "'", "dbo.BackupMachine"));
+
             foreach (DataTable table in ds.Tables)
             {
                 foreach (DataRow rows in table.Rows)
                 {
                     for (int i = 0; i < table.Columns.Count; i++)
                     {
-                        return ((rows[i]).ToString().Trim()); //添加列表并且移除当前所有前导空白字符和后置空白字符
+                        InLibraryOrNot=((rows[i]).ToString().Trim()); //添加列表并且移除当前所有前导空白字符和后置空白字符
                     }
-                    return null;
+                    
                 }
             }
-            return null;
+
+
+            
+
+
+            foreach (DataTable table in ds1.Tables)
+            {
+                foreach (DataRow rows in table.Rows)
+                {
+                    for (int i = 0; i < table.Columns.Count; i++)
+                    {
+                        NameOfStandbyMachine=((rows[i]).ToString().Trim()); //添加列表并且移除当前所有前导空白字符和后置空白字符
+                    }
+                    //return null;
+                }
+            }
+            return InLibraryOrNot;
         }
 
         /// <summary>

@@ -69,19 +69,31 @@ namespace RepairManagementS
         /// <param name="e"></param>
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-
+            string aa = "";
             string tem = comboBox1.Text;
-            ope.CheckWTSMII(tem);
-            IsItRight = ope.CheckWTSMII(tem);//查看机器有没有在
+            //ope.CheckWTSMII(tem,out aa);
+            IsItRight = ope.CheckWTSMII(tem, out aa);//查看机器有没有在
             if (IsItRight=="是")//如果有则运行下面
             {
                 this.pictureBox1.Image = Image.FromFile(@"..\..\picture\YES.jpg");
+                label4.Text = "出库人";
+                label5.Text = "借用公司";
+                textBox1.Text = "出库";
+
             }
             else//没有则运行
             {
                 this.pictureBox1.Image = Image.FromFile(@"..\..\picture\NO.jpg");
+                label4.Text = "入库人";
+                label5.Text = "归还公司";
+                textBox1.Text = "入库";
             }
-            
+            textBox4.Text = aa;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();//关闭窗口
         }
     }
 }

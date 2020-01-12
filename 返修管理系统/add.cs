@@ -27,22 +27,22 @@ namespace 返修管理系统
         /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
-            A_region.Text = " ";
-            A_RepairCompany.Text = " ";
-            A_RepairMethod.Text = " ";
-            A_RepairNumber.Text = " ";
-            //A_NotificationOTOD.Text = " ";
-            //A_DeliveryTime.Text = " ";
-            A_Consignee.Text = " ";
-            A_MachineType.Text = " ";
-            A_Repairman.Text = " ";
-            A_MachineModel.Text = " ";
-            A_SerialNumber.Text = " ";
-            A_FaultStatus.Text = " ";
-            A_CauseOfFailure.Text = " ";
+            A_region.Text = "";
+            A_RepairCompany.Text = "";
+            A_RepairMethod.Text = "";
+            A_RepairNumber.Text = "";
+            //A_NotificationOTOD.Text = "";
+            //A_DeliveryTime.Text = "";
+            A_Consignee.Text = "";
+            A_MachineType.Text = "";
+            A_Repairman.Text = "";
+            A_MachineModel.Text = "";
+            A_SerialNumber.Text = "";
+            A_FaultStatus.Text = "";
+            A_CauseOfFailure.Text = "";
             A_ExternalRepair.Text = "否";
-            A_MaintenanceMethod.Text = " ";
-            A_Remarks.Text = " ";
+            A_MaintenanceMethod.Text = "";
+            A_Remarks.Text = "";
         }
 
         /// <summary>
@@ -52,26 +52,50 @@ namespace 返修管理系统
         /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            if (A_RepairCompany.Text == "")
-                {
-                MessageBox.Show("报修公司不能空白");
+
+            if (A_region.Text == " " | A_region.Text == "")//区域
+            {
+                MessageBox.Show("区域不能空白");
                 return;
                 }
-            if (A_RepairMethod.Text == "自带")
+            if (A_RepairCompany.Text == " " | A_RepairCompany.Text == "")//报修公司
+            {
+                MessageBox.Show("报修公司不能空白");
+                return;
+            }
+
+
+            if (A_RepairMethod.Text == "自带" | A_RepairMethod.Text == "" | A_RepairMethod.Text == " ")//报修方式
             {
                 MessageBox.Show("报修方式不能空白");
                 return;
             }
-            if (A_RepairMethod.Text=="自带")
-            {
-                A_RepairNumber.Text = "自带";
-            }
-            if (A_RepairNumber.Text == "")
+
+            
+            if (A_RepairNumber.Text == "" | A_RepairNumber.Text == " ")
             {
                 MessageBox.Show("返修单号不能空白");
                 return;
             }
+            if (A_RepairNumber.Text.Length != 9)
+            {
+                MessageBox.Show("返修单号不够9位");
+                return;
+            }
+
+            if (A_Consignee.Text == "" | A_Consignee.Text == " ")//提货人
+            {
+                MessageBox.Show("提货人不能空白");
+                return;
+            }
             
+            if (A_MachineType.Text == "" | A_MachineType.Text == " ")//类型
+            {
+                MessageBox.Show("类型不能空白");
+                return;
+            }
+
+
             string reg= A_region.Text;//区域
             string RepairC = A_RepairCompany.Text;//报修公司
             string RepairM = A_RepairMethod.Text;//报修方式
@@ -89,7 +113,8 @@ namespace 返修管理系统
             string MaintenanceM = A_MaintenanceMethod.Text;//维修方法
             string Remarks = A_Remarks.Text;//备注
             
-            ope.add(reg, RepairC, RepairM,RepairN, NotificationO, DeliveryT,Con, MachineT,Repairman,MachineM,SerialN,FaultS,CauseOfF,ExternalR, MaintenanceM,Remarks);
+            ope.add(reg, RepairC, RepairM,RepairN, NotificationO, DeliveryT,Con, MachineT,Repairman,MachineM,SerialN,FaultS,CauseOfF,ExternalR, MaintenanceM,Remarks);//添加到数据库
+            MessageBox.Show("添加成功");
         }
     }
 }
