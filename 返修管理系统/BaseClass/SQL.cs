@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace RepairManagementS.BaseClass
 {
@@ -20,11 +21,26 @@ namespace RepairManagementS.BaseClass
             if (con == null)
             {
 
-                con = new SqlConnection("Data Source=192.168.0.107;DataBase=my_Repair_db;Integrated Security=false;Uid=sa;Pwd=123456789;");
+                
+                try
+                {
+                    con = new SqlConnection("Data Source=192.168.0.107;DataBase=my_Repair_db;Integrated Security=false;Uid=sa;Pwd=123456789;");
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("数据库连接错误");
+                }
                 //con = new SqlConnection(" Data Source = .\\SqlExpress;DataBase = db_EquipmentMS;Integrated Security =True");
             }
-            if (con.State == System.Data.ConnectionState.Closed)
+            if (con.State == System.Data.ConnectionState.Closed)//状态关闭
+            {
+                //MessageBox.Show("数据库连接错误2");
+                //System.Environment.Exit(0);//关闭窗体
                 con.Open();
+
+            }  
+                
 
         }
       
